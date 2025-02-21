@@ -1,14 +1,20 @@
-# Films and TV Programmes Multi-Label Genre Dataset  
+# Films and TV Programmes Multi-Label Genre Datasets  
 
 ## Overview  
 
-This dataset consists of **56,637 films** and **9,110 TV programmes**, curated from **Filmaffinity** and **IMDb**, respectively. Each entry is **multi-labelled**, containing a combination of genres, allowing for nuanced classification tasks. The dataset is designed for **multi-label classification, content-based recommendations, and genre prediction**.  
+This repository contains two multi-label datasets:  
+1. **`filmaffinity-film.csv`** – A dataset of **56,637 films** sourced from **Filmaffinity**.  
+2. **`imdb-tv.csv`** – A dataset of **9,110 TV programmes** curated from **IMDb**.
+
+Each dataset entry includes multiple genre labels, enabling tasks such as **multi-label classification, content-based recommendations, and genre prediction**.  
+
+
 
 ## Dataset Details  
 
 ### Data Sources  
-- **Films:** Filmaffinity  
-- **TV Programmes:** IMDb  
+- **Films:** Filmaffinity (`filmaffinity-film.csv`)  
+- **TV Programmes:** IMDb (`imdb-tv.csv`)
 
 ### Total Instances  
 - **Films:** 56,637  
@@ -39,10 +45,9 @@ Each dataset entry contains the following fields:
 
 ## Potential Use Cases  
 
-This dataset is suitable for various **machine learning** and **data analysis** applications, including:  
+These datasets are suitable for various **machine learning** and **data analysis** applications, including:  
 
 - **Multi-label classification**: Predicting genres based on textual and visual features.  
 - **Content-based recommendation**: Suggesting films or TV programmes based on genre similarities.  
 - **Poster-based genre classification**: Using images to infer likely genres.  
 - **Natural Language Processing (NLP) tasks**: Analysing synopses and metadata to improve content tagging.  
-
