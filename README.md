@@ -97,3 +97,36 @@ Each dataset includes the following additional features for genre prediction:
 
 Each dataset includes the original features (e.g., title, synopsis, director, cast, etc.) along with the predicted genres and probabilities from the **CLIP** and **BERT** models.
 
+---
+
+## Results for Analysis Datasets
+
+All the results obtained from CLIP, BERT, BERT-CLIP, and MM models are included for further analysis in the repository:
+
+1. **`filmaffinity-film-results-for-analysis.csv`** – Contains results for film genre predictions from multiple models.
+2. **`imdb-tv-results-for-analysis.csv`** – Contains results for TV programme genre predictions from multiple models.
+
+Each dataset includes the following additional features:
+
+- **`pred_genre_BERT-CLIP`**: Predicted genre using a combined **BERT** and **CLIP** model.
+- **`pred_genre_MM`**: Predicted genre using the **MM** model.
+  
+For each genre (e.g., Action, Animation, Comedy, Drama, Horror, Kids, Romance, Thriller), the dataset provides the predicted probabilities and classifications from the following models:
+
+- **CLIP model**: `Action_CLIP_prob`, `Animation_CLIP_prob`, etc.
+- **BERT model**: `Action_BERT_prob`, `Animation_BERT_prob`, etc.
+- **BERT-CLIP model**: `Action_BERT-CLIP_prob`, `Animation_BERT-CLIP_prob`, etc.
+- **MM model**: `Action_MM_prob`, `Animation_MM_prob`, etc.
+
+Each entry also includes:
+
+- **Title**, **director**, **cast**, **synopsis**
+- **URLs** for film details and posters
+- **Predicted genre labels** for each model (e.g., `pred_genre_CLIP`, `pred_genre_BERT`, etc.)
+- **Genre probability values** (e.g., `Action_CLIP_prob`, `Drama_BERT_prob`, etc.)
+- **Genre predictions** for each model (e.g., `Action_CLIP_pred`, `Comedy_BERT_pred`, etc.)
+
+---
+
+
+
