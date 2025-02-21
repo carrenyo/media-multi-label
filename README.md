@@ -22,7 +22,41 @@ Each dataset entry includes multiple genre labels, enabling tasks such as **mult
 
 ### Genre Combinations  
 - **Films:** 88 unique combinations from 8 genres  
-- **TV Programmes:** 94 unique combinations from 20 genres  
+- **TV Programmes:** 94 unique combinations from 20 genres
+
+### Genre Labels
+
+#### Films (8 genres):
+- **Action**
+- **Animation**
+- **Comedy**
+- **Drama**
+- **Horror**
+- **Kids**
+- **Romance**
+- **Thriller**
+
+#### TV Programmes (20 genres):
+- **Action**
+- **Adventure**
+- **Animation**
+- **Biography**
+- **Comedy**
+- **Crime**
+- **Documentary**
+- **Drama**
+- **Family**
+- **Fantasy**
+- **Game-Show**
+- **History**
+- **Music**
+- **Mystery**
+- **News**
+- **Reality-TV**
+- **Romance**
+- **Sci-Fi**
+- **Sport**
+- **Talk-Show**
 
 ### Genre Standardisation  
 - Genres were reordered **alphabetically** to maintain consistency.  
