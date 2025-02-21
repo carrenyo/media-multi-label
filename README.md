@@ -51,3 +51,24 @@ These datasets are suitable for various **machine learning** and **data analysis
 - **Content-based recommendation**: Suggesting films or TV programmes based on genre similarities.  
 - **Poster-based genre classification**: Using images to infer likely genres.  
 - **Natural Language Processing (NLP) tasks**: Analysing synopses and metadata to improve content tagging.  
+
+## Additional Meta-Model Datasets: Genre Prediction
+
+Alongside the original datasets **`filmaffinity-film.csv`** and **`imdb-tv.csv`** datasets, this repository includes two additional datasets used to feed the meta-model, combining **CLIP** and **BERT** model predictions:
+
+1. **`filmaffinity-film-metamodel.csv`** – Contains genre predictions and probabilities for films.
+2. **`imdb-tv-metamodel.csv`** – Contains genre predictions and probabilities for TV programmes.
+
+Each dataset includes the following additional features for genre prediction:
+
+- **`pred_genre_CLIP`**: Genre predicted by the **CLIP** model based on image features (posters downloaded from **`poster_url`**).
+- **`pred_genre_BERT`**: Genre predicted by the **BERT** model based on textual features (**`title`**, **`synopsis`**, **`director`**, and **`cast`**).
+- **Genre Probabilities**:
+  - **`Action_CLIP_prob`, `Animation_CLIP_prob`, `Comedy_CLIP_prob`, ...**: The **CLIP** model's probability scores for each genre for the corresponding media entry.
+  - **`Action_BERT_prob`, `Animation_BERT_prob`, `Comedy_BERT_prob`, ...**: The **BERT** model's probability scores for each genre for the corresponding media entry.
+- **Genre Predictions**:
+  - **`Action_CLIP_pred`, `Animation_CLIP_pred`, `Comedy_CLIP_pred`, ...**: The **CLIP** model's genre prediction as binary (1) or non-prediction (0) for each genre.
+  - **`Action_BERT_pred`, `Animation_BERT_pred`, `Comedy_BERT_pred`, ...**: The **BERT** model's genre prediction as binary (1) or non-prediction (0) for each genre.
+
+Each dataset includes the original features (e.g., title, synopsis, director, cast, etc.) along with the predicted genres and probabilities from the **CLIP** and **BERT** models.
+
