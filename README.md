@@ -77,15 +77,6 @@ Each dataset entry contains the following fields:
 - **`content_url`**: URL to the source website for content details.  
 - **`poster_url`**: URL to the poster image.  
 
-## Potential Use Cases  
-
-These datasets are suitable for various **machine learning** and **data analysis** applications, including:  
-
-- **Multi-label classification**: Predicting genres based on textual and visual features.  
-- **Content-based recommendation**: Suggesting films or TV programmes based on genre similarities.  
-- **Poster-based genre classification**: Using images to infer likely genres.  
-- **Natural Language Processing (NLP) tasks**: Analysing synopses and metadata to improve content tagging.  
-
 ## Additional Meta-Model Datasets: Genre Prediction
 
 Alongside the original datasets **`filmaffinity-film.csv`** and **`imdb-tv.csv`** datasets, this repository includes two additional datasets used to feed the meta-model, combining **CLIP** and **BERT** model predictions:
